@@ -233,6 +233,7 @@ module.exports = {
     "react/no-deprecated": "warn",
     "react/no-children-prop": "warn",
     "react/jsx-no-target-blank": "warn",
+    "react/self-closing-comp": ["warn", { component: true, html: true }],
 
     // promise
     "promise/always-return": "warn",
