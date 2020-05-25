@@ -87,7 +87,6 @@ module.exports = {
       },
       { blankLine: "always", prev: "multiline-const", next: "*" },
     ],
-    prefixWithI: "never",
 
     // ts
     "@typescript-eslint/indent": "off",
