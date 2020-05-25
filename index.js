@@ -19,6 +19,7 @@ module.exports = {
     "react",
     "react-hooks",
     "prettier",
+    "formatjs",
   ],
 
   extends: [
@@ -87,6 +88,13 @@ module.exports = {
       },
       { blankLine: "always", prev: "multiline-const", next: "*" },
     ],
+    "no-restricted-imports": [
+      "error",
+      {
+        name: "react-intl",
+        message: "Use src/shared/intl instead!",
+      },
+    ],
 
     // ts
     "@typescript-eslint/indent": "off",
@@ -95,11 +103,10 @@ module.exports = {
     "unicorn/explicit-length-check": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-empty-function": "warn",
-    "@typescript-eslint/ban-ts-ignore": "warn",
-    "@typescript-eslint/camelcase": "warn",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-var-requires": "off",
 
     // prettier
     "prettier/prettier": [
