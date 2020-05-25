@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-react-r13v",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Rustam Gilyaziev <gilaziev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r13v/eslint-config-react-r13v.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r13v/eslint-config-react-r13v/issues"
+  },
+  "homepage": "https://github.com/r13v/eslint-config-react-r13v#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-formatjs": "^2.3.6",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-unicorn": "^20.0.0",
+    "typescript": "^3.9.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.1.0",
+    "react": ">=16.11.0"
+  }
+}
