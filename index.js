@@ -111,6 +111,7 @@ module.exports = {
     "import/no-cycle": "warn",
     "import/no-unused-modules": "warn",
     "import/no-default-export": "warn",
+    "import/default": "off",
 
     // ts
     "@typescript-eslint/indent": "off",
