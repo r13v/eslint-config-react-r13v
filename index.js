@@ -89,7 +89,7 @@ module.exports = {
       { blankLine: "always", prev: "multiline-const", next: "*" },
     ],
     "no-restricted-imports": [
-      "error",
+      "warn",
       {
         name: "react-intl",
         message: "Use src/shared/intl instead!",
