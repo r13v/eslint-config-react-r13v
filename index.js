@@ -44,13 +44,7 @@ module.exports = {
       version: "detect",
     },
     "import/resolver": {
-      typescript: {
-        directory: ".",
-      },
-      alias: {
-        map: [["src", "./src"]],
-        extensions: [".tsx", ".ts", ".js", ".jsx", ".json"],
-      },
+      typescript: {},
     },
   },
 
