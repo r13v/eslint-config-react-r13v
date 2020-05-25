@@ -44,7 +44,13 @@ module.exports = {
       version: "detect",
     },
     "import/resolver": {
-      typescript: {},
+      typescript: {
+        directory: ".",
+      },
+      alias: {
+        map: [["src", "./src"]],
+        extensions: [".tsx", ".ts", ".js", ".jsx", ".json"],
+      },
     },
   },
 
@@ -104,7 +110,15 @@ module.exports = {
     "import/order": [
       "warn",
       {
-        "newlines-between": "always",
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "always-and-inside-groups",
       },
     ],
     "import/newline-after-import": "warn",
