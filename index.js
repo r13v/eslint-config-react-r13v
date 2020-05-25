@@ -212,6 +212,7 @@ module.exports = {
     "unicorn/prefer-query-selector": "warn",
     "unicorn/throw-new-error": "warn",
     "unicorn/new-for-builtins": "warn",
+    "unicorn/no-null": "off",
 
     // Sonar
     "sonarjs/no-small-switch": "warn",
