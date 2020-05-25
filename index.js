@@ -20,6 +20,7 @@ module.exports = {
     "react-hooks",
     "prettier",
     "formatjs",
+    "import",
   ],
 
   extends: [
@@ -33,6 +34,9 @@ module.exports = {
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
     "prettier/react",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
   ],
 
   settings: {
@@ -95,6 +99,18 @@ module.exports = {
         message: "Use src/shared/intl instead!",
       },
     ],
+
+    // import
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+      },
+    ],
+    "import/newline-after-import": "warn",
+    "import/no-cycle": "warn",
+    "import/no-unused-modules": "warn",
+    "import/no-default-export": "warn",
 
     // ts
     "@typescript-eslint/indent": "off",
