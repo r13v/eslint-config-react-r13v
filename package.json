@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-config-r13v",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {},
   "author": "Rustam Gilyaziev <gilaziev@gmail.com>",
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/r13v/eslint-config-react-r13v#readme",
   "description": "",
   "devDependencies": {
-    "eslint": "^7.1.0"
+    "eslint": "^7.2.0"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.0",
@@ -34,7 +34,7 @@
     "typescript": "^3.9.3"
   },
   "peerDependencies": {
-    "eslint": ">=7.1.0",
-    "react": ">=16.11.0"
+    "eslint": ">=7.2.0",
+    "react": ">=16.8.0"
   }
 }
