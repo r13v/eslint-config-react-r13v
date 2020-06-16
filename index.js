@@ -28,7 +28,6 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:unicorn/recommended",
     "plugin:sonarjs/recommended",
     "prettier/@typescript-eslint",
@@ -243,6 +242,10 @@ module.exports = {
     "react/no-children-prop": "warn",
     "react/jsx-no-target-blank": "warn",
     "react/self-closing-comp": ["warn", { component: true, html: true }],
+
+    // React Hooks
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
 
     // promise
     "promise/always-return": "warn",
