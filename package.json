@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-config-r13v",
-  "version": "1.0.5",
+  "version": "1.1.4",
   "main": "index.js",
   "scripts": {},
   "author": "Rustam Gilyaziev <gilaziev@gmail.com>",
@@ -15,26 +15,27 @@
   "homepage": "https://github.com/r13v/eslint-config-react-r13v#readme",
   "description": "",
   "devDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.14.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-formatjs": "^2.3.6",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-formatjs": "^2.9.10",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsdoc": "^30.7.8",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-unicorn": "^20.0.0",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.3"
+    "eslint-plugin-unicorn": "^23.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2"
   },
   "peerDependencies": {
-    "eslint": ">=7.2.0",
-    "react": ">=16.8.0"
+    "eslint": ">=7.14.0"
   }
 }
