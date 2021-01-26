@@ -16,7 +16,6 @@ module.exports = {
     "@typescript-eslint",
     "promise",
     "unicorn",
-    "sonarjs",
     "react",
     "react-hooks",
     "prettier",
@@ -32,7 +31,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:unicorn/recommended",
-    "plugin:sonarjs/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
     "prettier/react",
@@ -399,17 +397,6 @@ module.exports = {
     "unicorn/no-null": "off",
     "unicorn/no-reduce": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
-
-    // Sonar
-    "sonarjs/no-small-switch": "warn",
-    "sonarjs/prefer-immediate-return": "off",
-    "sonarjs/cognitive-complexity": "warn",
-    "sonarjs/no-identical-expressions": "warn",
-    "sonarjs/no-unused-collection": "warn",
-    "sonarjs/no-identical-functions": "warn",
-    "sonarjs/no-collapsible-if": "warn",
-    "sonarjs/no-duplicated-branches": "warn",
-    "sonarjs/no-redundant-boolean": "warn",
 
     // react
     "react/jsx-filename-extension": ["warn", { extensions: [".js", ".tsx"] }],
