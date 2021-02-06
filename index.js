@@ -1,6 +1,12 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
 
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+
   env: {
     es6: true,
     browser: true,
@@ -20,7 +26,7 @@ module.exports = {
     "react-hooks",
     "prettier",
     "formatjs",
-    "import",
+    "simple-import-sort",
     "jsdoc",
     "jest",
   ],
@@ -34,9 +40,6 @@ module.exports = {
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
     "prettier/react",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
     "plugin:jest/recommended",
     "plugin:jest/style",
   ],
@@ -44,9 +47,6 @@ module.exports = {
   settings: {
     react: {
       version: "detect",
-    },
-    "import/resolver": {
-      typescript: {},
     },
   },
 
@@ -273,30 +273,15 @@ module.exports = {
       "openDatabase",
     ],
 
-    // import
-    "import/order": [
-      "warn",
-      {
-        groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-        ],
-        "newlines-between": "always-and-inside-groups",
-      },
-    ],
-    "import/newline-after-import": "warn",
-    "import/no-cycle": "warn",
-    "import/no-unused-modules": "warn",
-    "import/no-default-export": "warn",
-    "import/default": "off",
+    // simple import sort
+    "simple-import-sort/imports": ["warn"],
 
     // ts
     "@typescript-eslint/indent": "off",
-    "@typescript-eslint/no-use-before-define": "warn",
+    "@typescript-eslint/no-use-before-define": [
+      "warn",
+      { functions: false, typedefs: false, classes: false },
+    ],
     "@typescript-eslint/no-inferrable-types": "warn",
     "unicorn/explicit-length-check": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -373,14 +358,7 @@ module.exports = {
     // unicorn
     "unicorn/prevent-abbreviations": "off",
     "unicorn/consistent-function-scoping": "off",
-    "unicorn/filename-case": [
-      "warn",
-      {
-        cases: {
-          kebabCase: true,
-        },
-      },
-    ],
+    "unicorn/filename-case": ["warn", { cases: { kebabCase: true } }],
     "unicorn/no-abusive-eslint-disable": "warn",
     "unicorn/better-regex": "warn",
     "unicorn/prefer-number-properties": "warn",
@@ -397,22 +375,38 @@ module.exports = {
     "unicorn/no-null": "off",
     "unicorn/no-reduce": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/consistent-destructuring": "warn",
+    "unicorn/no-array-reduce": "off",
+    "unicorn/no-array-for-each": "off",
+    "unicorn/no-new-array": "off",
+    "unicorn/prefer-spread": "off",
+    "unicorn/prefer-array-index-of": "warn",
+    "unicorn/no-array-push-push": "warn",
+    "unicorn/no-array-callback-reference": "off",
 
     // react
     "react/jsx-filename-extension": ["warn", { extensions: [".js", ".tsx"] }],
-    "react/sort-comp": "warn",
+    "react/sort-comp": "off",
     "react/jsx-no-literals": "warn",
     "react/prop-types": "off",
-    "react/display-name": "warn",
+    "react/display-name": "off",
     "react/no-deprecated": "warn",
     "react/no-children-prop": "warn",
     "react/jsx-no-target-blank": "warn",
     "react/self-closing-comp": ["warn", { component: true, html: true }],
     "react/jsx-fragments": ["warn", "element"],
+    "react/destructuring-assignment": ["warn", "always"],
+    "react/function-component-definition": [
+      "warn",
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
+    ],
 
     // React Hooks
-    "react-hooks/rules-of-hooks": "warn",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
 
     // promise
     "promise/always-return": "warn",
