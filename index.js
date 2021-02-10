@@ -272,6 +272,7 @@ module.exports = {
       "webkitResolveLocalFileSystemURL",
       "openDatabase",
     ],
+    "no-duplicate-imports": "warn",
 
     // simple import sort
     "simple-import-sort/imports": ["warn"],
