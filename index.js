@@ -402,6 +402,7 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
+    "react/jsx-curly-brace-presence": ["warn", { "props": "never", "children": "always" }],
 
     // React Hooks
     "react-hooks/rules-of-hooks": "error",
