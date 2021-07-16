@@ -29,6 +29,7 @@ module.exports = {
     "simple-import-sort",
     "jsdoc",
     "jest",
+    "@kyleshevlin"
   ],
 
   extends: [
@@ -407,6 +408,8 @@ module.exports = {
     // React Hooks
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "@kyleshevlin/prefer-custom-hooks": "warn",
+    "@kyleshevlin/no-skipped-or-focused-tests": "off",
 
     // promise
     "promise/always-return": "warn",
