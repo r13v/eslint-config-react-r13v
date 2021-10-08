@@ -29,7 +29,8 @@ module.exports = {
     "simple-import-sort",
     "jsdoc",
     "jest",
-    "@kyleshevlin"
+    "@kyleshevlin",
+    "effector",
   ],
 
   extends: [
@@ -41,6 +42,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
+    "plugin:effector/recommended",
   ],
 
   settings: {
@@ -403,7 +405,10 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
-    "react/jsx-curly-brace-presence": ["warn", { "props": "never", "children": "always" }],
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      { props: "never", children: "always" },
+    ],
 
     // React Hooks
     "react-hooks/rules-of-hooks": "error",
