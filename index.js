@@ -276,7 +276,12 @@ module.exports = {
     "no-duplicate-imports": "warn",
 
     // simple import sort
-    "simple-import-sort/imports": ["warn"],
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        groups: [["^\\u0000"], ["^react", "^[^.]"], ["^src"], ["^\\."]],
+      },
+    ],
 
     // ts
     "@typescript-eslint/indent": "off",
@@ -302,6 +307,7 @@ module.exports = {
       },
     ],
     "@typescript-eslint/no-shadow": "warn",
+    "@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
 
     // prettier
     "prettier/prettier": [
@@ -385,8 +391,10 @@ module.exports = {
     "unicorn/prefer-array-index-of": "warn",
     "unicorn/no-array-push-push": "warn",
     "unicorn/no-array-callback-reference": "off",
+    "unicorn/prefer-module": "off",
 
     // react
+    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { extensions: [".js", ".tsx"] }],
     "react/sort-comp": "off",
     "react/jsx-no-literals": "warn",
@@ -449,5 +457,9 @@ module.exports = {
     "jsdoc/require-description": "warn",
     "jsdoc/require-description-complete-sentence": "warn",
     "jsdoc/require-jsdoc": "off",
+
+    // jest
+    "jest/expect-expect": "off",
+    "jest/valid-title": "off",
   },
 }
