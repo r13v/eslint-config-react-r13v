@@ -53,6 +53,7 @@ module.exports = {
 
   rules: {
     // general
+    indent: ["warn", 2],
     "max-lines": ["warn", 500],
     "no-console": "warn",
     "object-shorthand": "warn",
@@ -313,12 +314,13 @@ module.exports = {
     "prettier/prettier": [
       "warn",
       {
-        trailingComma: "all",
-        semi: false,
-        arrowParens: "always",
-        singleQuote: false,
-        printWidth: 80,
         bracketSpacing: true,
+        bracketSameLine: false,
+        printWidth: 80,
+        singleQuote: false,
+        trailingComma: "all",
+        arrowParens: "always",
+        semi: false,
       },
     ],
 
